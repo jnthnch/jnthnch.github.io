@@ -1,20 +1,448 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Jonathan Chu</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-  <h1>hello world</h1>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Jonathan Chu</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Jonathan Chu</div>
+            <div class="masthead-heading text-uppercase">Software Engineer Problem Solver Teammate</div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+                href="https://docs.google.com/document/d/1DAhHiwTU2tEoG9mHUFBbw7qTKKa_6y-3udAenYNX_6s/edit?usp=sharing"
+                target="_blank">Resume</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About Me</h2>
+                <hr>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img class="profile-image" src="assets/img/about/profile.jpg">
+                </div>
+                <div class="col-md-4">
+                    <!-- <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i
+                            class="fas fa-laptop fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="my-3">Responsive Design</h4> -->
+                    <p class="text-muted" align="left">Hi! I'm a software engineer currently located in the San
+                        Francisco Bay Area. Prior to becoming a software engineer, I worked as an audio engineer and
+                        studio technician at NBC Sports. I attended University of California at Davis and have a degree
+                        in Managerial Economics.
+                        <br>
+                        <br>
+                        My interest in technology and web/mobile applications stemmed from realizing its impact on
+                        sports fans while I
+                        worked at NBC Sports.
+                        I have experienced the positive and fun impact it can have not only on individuals and society
+                        as
+                        a whole. I am passionate about building applications that can either entertain users or help
+                        the users with their day-to-day lives.
+                        <br>
+                        <br>
+                        When I have free time I love to do high intensity interval training workouts, learn new sous
+                        vides receipes, and study the
+                        NBA salary cap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Latest Projects</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4-projects col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/better_icon.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Better Sports</div>
+                            <div class="portfolio-caption-subheading text-muted">iOS app</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4-projects col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/disney.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Merry Markets</div>
+                            <div class="portfolio-caption-subheading text-muted">System Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4-projects col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/football.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Beat5238</div>
+                            <div class="portfolio-caption-subheading text-muted">Full Stack</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-->
+    <!-- <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Childhood</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Born and raised in San Francisco's sunset district. Grew up playing
+                                basketball, the clarinet, and winning NFL Madden tournaments.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2006-2010</h4>
+                            <h4 class="subheading">UC Davis</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Some of the best years of my life. I made friendships that will last a
+                                life-time, studied Managerial Economics, and worked for a D1 Basketball Team.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2011 - 2018</h4>
+                            <h4 class="subheading">NBC Sports Bay Area</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">It was my dream to work at NBC Sports. I started as an broadcasting
+                                studio intern and grew into a audio engineer. I was able to cover 3 San Francisco Giants
+                                World Series championships, 4 NBA Finals by the Golden State Warriors, a multiple
+                                playoff appearances by the San Francisco 49ers. I worked with an amazing team who I now
+                                consider family.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2019</h4>
+                            <h4 class="subheading">I am a Software Engineer!</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">I developed a passion for programming and I got my first job as a
+                                software engineer at Better Sports. I learned new technologies, worked with amazing
+                                engineers, and built the front end of an iOS app.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-image">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Today</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">I am looking for a software developer position. I am passionate about
+                                building applications people use and love.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>Be Part<br />Of My<br />Story!</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section> -->
+    <!-- Team-->
+    <section class="page-section" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Technologies</h2>
+                <hr>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/javascript.png" alt="" />
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/react.png" alt="" />
+                        <h4>ReactJS</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/nodejs.png" alt="" />
+                        <h4>NodeJS</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/html.png" alt="" />
+                        <h4>HTML5</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/css.png" alt="" />
+                        <h4>CSS3</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/postgresql.png" alt="" />
+                        <h4>PostgreSQL</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/mongodb.png" alt="" />
+                        <h4>MongoDB</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto" src="assets/img/technologies/git.png" alt="" />
+                        <h4>GIT</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Connect With Me</h2>
+                <h2 class="section-subheading text-muted">Email: jchu127@gmail.com</h2>
+                <h2 class="section-subheading text-muted">Phone: (415) 963-2331</h2>
+            </div>
+            <div class="contact-page-icons">
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/jnthnch/" target="_blank"><i
+                        class="fab fa-linkedin-in fa-3x"></i>
+                </a>
+                <a class="btn btn-dark btn-social mx-2" href="https://github.com/jnthnch" target="_blank"><i
+                        class="fab fa-github fa-3x"></i>
+                </a>
+                <a class="btn btn-dark btn-social mx-2"
+                    href="https://docs.google.com/document/d/1DAhHiwTU2tEoG9mHUFBbw7qTKKa_6y-3udAenYNX_6s/edit?usp=sharing"
+                    target="_blank"><i class="fas fa-file fa-3x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <!-- <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">Phone: 415-963-2331</div>
+                <div class="col-lg-4 text-lg-left">Email: jchu127@gmail.com</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:jchu127@gmail.com" target="_blank"><i
+                            class="fas fa-envelope"></i>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/jnthnch" target="_blank"><i
+                            class="fab fa-github"></i>
+                    </a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/jnthnch/"
+                        target="_blank"><i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer> -->
+    <!-- Portfolio Modals-->
+    <!-- Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Better Sports - Frontend Engineer</h2>
+                                <p class="item-intro text-muted">A eSports and fantasy sports iOS app</p>
+                                <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" /> -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TX3_sMryMZg"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <br>
+                                <a href="https://apps.apple.com/us/app/better-esports-gaming/id1477292335">App Store
+                                    download</a>
+                                <p>Technologies: JavaScript, React Native, GraphQL</p>
+                                <p align="left">Better Sports allows users to compete against each other for money by
+                                    testing their
+                                    sports/esports prediction knowledge. I led the design and development of the front
+                                    end from
+                                    start to finish using React Native.
+                                    <br>
+                                    <br>
+                                    Key product
+                                    features include: React Native Navigation for login/logout, scrolling vertically to
+                                    select
+                                    different game events, swiping between game props, submitting user selections to
+                                    backend via GraphQL mutations</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fas fa-times mr-1"></i>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Merry Markets - Backend Engineer</h2>
+                                <img class="img-fluid d-block mx-auto" height="300" width="300"
+                                    src="assets/img/merrymarkets.png" alt="" />
+                                <a href="https://github.com/merry-men-market/buy-form">Github</a>
+                                <p>Technologies used: PostgreSQL, Docker, AWS, NGINX, Loaderio, New Relic</p>
+                                <p>Merry Markets is a stock buying application where users can search, buy, and sell
+                                    stocks. I designed, deployed, and scaled the backend with REST APIs
+                                    to support 10M+ records on Amazon Web Services (AWS) EC2 instances.
+                                </p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fas fa-times mr-1"></i>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Beat5238</h2>
+                                <p class="item-intro text-muted">Web Application for users to track their
+                                    sports predictions</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/football.jpg" alt="" />
+                                <p>Technologies: ReactJS, ExpressJS, Bcrypt, PostgreSQL</p>
+                                <p>This web app fetches NFL betting lines from a sportsbook api and allows users to make
+                                    predictions based on their picks. Key features include user authentication via
+                                    password hashing.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fas fa-times mr-1"></i>Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
